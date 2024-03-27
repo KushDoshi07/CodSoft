@@ -1,4 +1,4 @@
 # CodSoft
-Repo for my internship 
+Repo for my internship tasks.
 <br>
-In this I have done the tasks given as a 1 month internship as a Python Intern
+Uploading my tasks given in my internship.
