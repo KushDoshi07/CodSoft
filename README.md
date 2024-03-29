@@ -1,37 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CodSoft - Internship Tasks</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      padding: 20px;
-    }
-
-    .task-container {
-      background-color: #fff;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    }
-
-    .task-heading {
-      font-size: 24px;
-      color: #333;
-      margin-bottom: 20px;
-    }
-
-    .task-list {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    .task-item {
-      margin-bottom: 10px;
-    }
-
-    .task-item b {
-      color: #007bff;
-    }
-  </style>
 </head>
 <body>
 
