@@ -12,7 +12,7 @@
     <p><b>Tasks:</b></p>
     <ul class="task-list">
       <li class="task-item">
-        <b>1. Calculator</b> - The user gives two numbers and operator as input and gets the result as the operation is performed.
+        <b>Calculator</b> - The user gives two numbers and operator as input and gets the result as the operation is performed.
         <ul>
           <li>I created a simple calculator with various features such as resizing, when the screen is resized the buttons and fonts of the text also get resized.</li>
         </ul>
