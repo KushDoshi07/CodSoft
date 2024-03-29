@@ -28,18 +28,19 @@ def answer():
 def adjust_font_size(event):
     width = event.width
     new_font_size = max(int(default_font_size * width / 600), 8)
-    calculatorField.config(font=("Times New Roman", new_font_size, "bold"))
+    calculatorField.config(font=("Helvetica", new_font_size, "bold"))
     for child in calculatorFrame.winfo_children():
         if isinstance(child, Button):
-            child.config(font=("Times New Roman", new_font_size, "bold"))
+            child.config(font=("Helvetica", new_font_size, "bold"))
 
 root = Tk()
 root.title("Calculator")
+root.configure(bg="#292929")
 
-calculatorFrame = Frame(root)
+calculatorFrame = Frame(root, bg="#292929")
 calculatorFrame.pack(fill=BOTH, expand=True)
 
-calculatorField = Entry(calculatorFrame, font=("Times New Roman", default_font_size, "bold"), width=30, bd=4)
+calculatorField = Entry(calculatorFrame, font=("Helvetica", default_font_size, "bold"), width=30, bd=4, bg="#121212", fg="white", insertbackground="white")
 calculatorField.grid(row=0, column=0, columnspan=4, sticky="nsew")
 
 buttons = [
@@ -50,7 +51,7 @@ buttons = [
 ]
 
 for (text, row, col) in buttons:
-    button = Button(calculatorFrame, text=text, font=("Times New Roman", default_font_size, "bold"), fg="black", bg="lightgreen", bd=6,
+    button = Button(calculatorFrame, text=text, font=("Helvetica", default_font_size, "bold"), fg="white", bg="#333333", bd=0,
                     width=6, command=lambda t=text: buttonClick(t) if t != "Ans" and t != "Clear" else answer() if t == "Ans" else clear())
     button.grid(row=row, column=col, sticky="nsew")
 
