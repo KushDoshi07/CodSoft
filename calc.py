@@ -35,12 +35,12 @@ def adjust_font_size(event):
 
 root = Tk()
 root.title("Calculator")
-root.configure(bg="#292929")
+root.configure(bg="#d9d9d9")
 
-calculatorFrame = Frame(root, bg="#292929")
+calculatorFrame = Frame(root, bg="#d9d9d9")
 calculatorFrame.pack(fill=BOTH, expand=True)
 
-calculatorField = Entry(calculatorFrame, font=("Helvetica", default_font_size, "bold"), width=30, bd=4, bg="#121212", fg="white", insertbackground="white")
+calculatorField = Entry(calculatorFrame, font=("Helvetica", default_font_size, "bold"), width=30, bd=4, bg="#f3f3f3", fg="#333333", insertbackground="#333333")
 calculatorField.grid(row=0, column=0, columnspan=4, sticky="nsew")
 
 buttons = [
@@ -51,7 +51,7 @@ buttons = [
 ]
 
 for (text, row, col) in buttons:
-    button = Button(calculatorFrame, text=text, font=("Helvetica", default_font_size, "bold"), fg="white", bg="#333333", bd=0,
+    button = Button(calculatorFrame, text=text, font=("Helvetica", default_font_size, "bold"), fg="#333333", bg="#bfbfbf", bd=0,
                     width=6, command=lambda t=text: buttonClick(t) if t != "Ans" and t != "Clear" else answer() if t == "Ans" else clear())
     button.grid(row=row, column=col, sticky="nsew")
 
