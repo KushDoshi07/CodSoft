@@ -27,6 +27,17 @@
         <li>Delete Tasks: Users can delete tasks from the list by selecting them and clicking the "Delete Task" button. This allows users to remove unnecessary or completed tasks and keep their list clean and manageable.</li>
       </ol>
     </li>
+    <li>
+      <h3>Rock Paper Scissors Game</h3>
+      <ol>
+        <li>User Input: Allow users to select between rock, paper, or scissors.</li>
+        <li>Computer Selection: Generate a random choice (rock, paper, or scissors) for the computer.</li>
+        <li>Game Logic: Determine the winner based on the user's choice and the computer's choice. Rock crushes scissors, scissors cuts paper, and paper covers rock.</li>
+        <li>Score Tracking: Keep track of the user's and computer's scores for multiple rounds.</li>
+        <li>Visual Feedback: Provide visual feedback to indicate the result of each round, such as highlighting the winning option or displaying a message.</li>
+        <li>Play Again: Allow users to play multiple rounds of the game without restarting the application.</li>
+      </ol>
+    </li>
   </ol>
 </body>
 </html>
