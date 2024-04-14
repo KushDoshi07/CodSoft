@@ -35,25 +35,20 @@ todo_list = []
 root = tk.Tk()
 root.title("Todo List")
 
-# Set minimum size of the window
 root.minsize(400, 300)
 
-# Create a frame for the input area
 input_frame = tk.Frame(root)
 input_frame.grid(row=0, column=0, sticky="nsew", padx=10, pady=10)
 
-# Create entry and button for adding tasks
 task_entry = tk.Entry(input_frame, width=50)
 task_entry.grid(row=0, column=0, padx=5, pady=5)
 
 add_button = tk.Button(input_frame, text="Add Task", command=add_task)
 add_button.grid(row=0, column=1, padx=5, pady=5)
 
-# Create a frame for the task list
 list_frame = tk.Frame(root)
 list_frame.grid(row=1, column=0, sticky="nsew", padx=10, pady=10)
 
-# Create a scrollable listbox for displaying tasks
 task_list_scrollbar = tk.Scrollbar(list_frame)
 task_list_scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
 
@@ -62,7 +57,6 @@ task_list.pack(side=tk.LEFT, fill=tk.BOTH)
 
 task_list_scrollbar.config(command=task_list.yview)
 
-# Create buttons for viewing, completing, and deleting tasks
 button_frame = tk.Frame(root)
 button_frame.grid(row=2, column=0, sticky="nsew", padx=10, pady=10)
 
@@ -78,13 +72,11 @@ delete_button.grid(row=0, column=2, padx=5, pady=5, sticky="we")
 exit_button = tk.Button(root, text="Exit", command=root.quit)
 exit_button.grid(row=3, column=0, padx=5, pady=5, sticky="we")
 
-# Configure grid weights for resizing
 root.columnconfigure(0, weight=1)
 root.rowconfigure(0, weight=1)
 root.rowconfigure(1, weight=1)
 root.rowconfigure(2, weight=1)
 
-# Change background colors and fonts
 root.config(bg="#f0f0f0")
 input_frame.config(bg="#f0f0f0")
 list_frame.config(bg="#f0f0f0")
